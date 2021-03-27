@@ -1,38 +1,40 @@
-En este repositorio centralizaremos toda la información relativa a los **Proyectos de Desarrollo de Aplicaciones Web del I.E.S Alixar**.
-Al continuación encontraremos los **apellidos y nombre** del alumno/a junto al **título de su proyecto**. El enlace nos dará acceso al repositorio del proyecto (no a la página GitHub del usuario).
-
-En este repositorio se debe incluir la documentación especificada en [Requerimientos y criterios a seguir en el desarrollo de los proyectos](https://github.com/iesalixar/plantilla_proyecto_iesalixar/wiki/a.---Criterios-comunes-para-todos-los-proyectos), así como las indicaciones que el tutor haya podido ir a realizando a lo largo del desarrollo del mismo.
-
-El desarrollo de toda Aplicación Web requiere seguir un [proceso estructurado](https://github.com/iesalixar/plantilla_proyecto_iesalixar/wiki/w1.--PROCESO-ESTRUCTURADO-PARA-DESARROLLO-DE-APLICACIONES-WEB), este  de contenido de la wiki te puede ayudar.
-
-
----
-
-**Los párrafos anteriores son informativos y no deben aparecer en el reposotirio de los alumnos.**
-
----
-
 # Título del Proyecto
 
-#### Curso Escolar 20XX-20XX
-#### Autor: [Nombre del alumno autor](Enlace a su cuenta de gitHub)
-#### Tutor: [Nombre del profesor tutor](Enlace a su cuenta de gitHub)
-#### Fecha de Inicio: DD-MM-YYYY
+#### Curso Escolar 2020-2021
+#### Autor: Antonio García Montes. https://github.com/AntonioDAW02/
+#### Tutor: Alejandro Leal Cruz(Enlace a su cuenta de gitHub)
+#### Fecha de Inicio: 15-03-2021
 #### Fecha de Finalización: DD-MM-YYYY
 
 ## Breve descripción del proyecto
 
-Si ya tienes una idea para tu aplicación, explícala brevemente. Si no es así, lo que realmente necesitas es **buscar un problema o necesidad a la que darle solución**, y estos **están por todas partes**. Así que trata de buscar problemas o necesidades en tu vida diaria y realiza una lista. Una vez que tengas una lista exhaustiva, ya puedes empezar a pensar en **cómo puedes resolverlos**.
+Mi aplicación web será una página de compra/venta de material eléctrico de media tensión, exclusivamente del sector eléctrico, desde 6 Kv. a 45 Kv. Existen varios tipos de empresas las cuales serían las siguientes: Fabricante, Distribuidora e instaladora.
 
-En este apartado el alumno debe hacer una breve descripción del proyecto que vaya a realizar. Esta descripción no será ua descripción detallada, será una presentación general con no más de 10 líneas.
+Todas la empresas deberán estar veríficadas mediante CIF por el administrador de la web. Además, el mismo podrá acceder a una lista de todas las empresesas, empleados y productos existentes, así como ofertas, etc.
+
+Las empresas podrán visualizar su información e insertar los productos que compran o venden dependiendo del tipo de empresa que sea. También tendrá una lista de empleados.
+
+Los empleados, también tendrán diferentes roles según si pertenecen a la empresa fabricante, distribuidora o instaladora pues cumplirá con su funcón. Tambien deberán de ser verificados por el administrador de la plataforma, mediante una documentación que certifique que el usuario es real y que pertenece a la empresa que ha indicado en el registro.
+
+De la misma manera, los empleados tendrán acceso a su perfil donde aparecerán sus datos pertinentes indicados en el registro, y otra vista donde aparecerán todos los productos que hay en venta y que dependiendo de su rol pues podrán vender si pertenecen a una empresa distribuidora, para vender a pequeñas instaladoras, o comprar directamente al fabricante, si pertenece a una instaladora grande.
 
 ## Definir el objetivo de la aplicación
-**Tener una gran idea** o encontrar un punto del mercado al que no se esté dando un producto o servicio es el punto de partida en cada nuevo proyecto. Antes de comenzar debes **definir claramente el propósito y la misión de la aplicación web**:
 
 - **¿Qué va a hacer la aplicación?**
+
+Ésta aplicación va a permitir la compra/venta de material elétrico de media tensión desde 6 Kv a 45 Kv.
+
 - **¿Cuál es su atractivo principal?** 
+
+En una sola aplicación estarán todos los productos del mercado a disposición de los clientes.
+
 - **¿Qué problema concreto va a resolver?** 
+
+Va a facilitar a los clientes encontrar el producto que le interesa y va a reducir los tiempos en los que se producen los acuerdos y se venden los productos.
+
 - **¿Qué necesidad va a cubrir?**
+
+Cubrirá las necesidades que tienen las empresas instaladoras a la hora de comprar el material eléctrico que necesiten.
 
 ## Prototipo de la Interfaz del proyecto
 
