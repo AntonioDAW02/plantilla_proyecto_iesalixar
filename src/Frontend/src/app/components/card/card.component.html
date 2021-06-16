@@ -1,0 +1,18 @@
+<mat-card  fxLayout="column" class="card-flex">
+    <mat-card-content  fxLayout="row" class="content" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <img mat-card-image src="{{img}}" fxFlex="100" class="img" alt="imagen"/>
+        <p  fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+            <label class="number" *ngIf="text == 'Users'" fxLayout="center">{{ num_users }}</label>
+            <label class="txt" *ngIf="text == 'Users'">{{ text }}</label>
+
+            <label class="number" *ngIf="text == 'Business'">{{ num_business }}</label>
+            <label class="txt" *ngIf="text == 'Business'">{{ text }}</label>
+
+            <label class="number" *ngIf="text == 'Products'">{{ num_products }}</label>
+            <label class="txt" *ngIf="text == 'Products'">{{ text }}</label>
+
+            <label class="number" *ngIf="text == 'Orders'">{{ num_order }}</label>
+            <label class="txt" *ngIf="text == 'Orders'">{{ text }}</label>
+        </p>
+    </mat-card-content>
+</mat-card>

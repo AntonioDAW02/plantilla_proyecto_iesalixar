@@ -1,0 +1,18 @@
+<div class="view" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center center">
+        <app-card [routerLink]="['/user-data-table']" fxFlex="100" fxFlex.xs="100" fxLayout.sm="column" [img]="'../../../assets/user.svg'"
+                [num_users]="num_users" [text]="'Users'" alt="Users">
+        </app-card>
+        <app-card [routerLink]="['/business-data-table']" fxFlex="100" fxFlex.xs="100" fxLayout.sm="column" [img]="'../../../assets/business.svg'"
+                [num_business]="num_business" [text]="'Business'" alt="Business">
+        </app-card>
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center center">
+        <app-card [routerLink]="['/product-data-table']" fxFlex="100" fxFlex.xs="100" fxLayout.sm="column" [img]="'../../../assets/shopping_product.svg'"
+                [num_products]="num_products" [text]="'Products'" alt="Products">
+        </app-card>
+        <app-card fxFlex="100" fxFlex.xs="100" fxLayout.sm="column" [img]="'../../../assets/inventory_order.svg'"
+                [num_order]="num_order" [text]="'Orders'" alt="Orders">
+        </app-card>
+    </div>
+</div>

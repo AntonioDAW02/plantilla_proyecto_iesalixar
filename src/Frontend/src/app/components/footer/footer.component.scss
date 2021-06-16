@@ -1,0 +1,25 @@
+.footer {
+    background-color: #6200EE;
+    text-align: center;
+    color: white;
+    height: 15%;
+    width: 100%;
+
+    p{
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }
+}
+
+.social-icons {
+    padding-top: 0.75rem;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 8px;
+}

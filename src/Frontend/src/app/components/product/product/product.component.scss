@@ -1,0 +1,72 @@
+.div-menu{
+    background-color: #6200EE;
+    color: white;
+}
+
+.container-product {
+    height: calc(100vh - 25%);
+}
+
+.panel-heading {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.panel-heading,
+.headingText {
+    padding-top: 10px;
+    max-width: 1350px;
+}
+
+table {
+    min-width: 1300px;
+    margin: 0 auto;
+}
+
+table tr th,
+table tr td {
+    text-align: center;
+    padding: 1rem;
+}
+
+.btn-ed, .btn-el {
+    margin: 0 0.5rem;
+}
+
+.mat-paginator-container{
+    padding: 0;
+}
+
+.mat-paginator, .btn-dialog {
+    display: flex;
+    justify-content: right;
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+@media (max-width:385px) {
+    .panel-heading {
+        width: 90%;
+        margin-left: 1.5rem;
+    }
+
+    .panel-heading,
+    .headingText {
+        display: inline-block;
+    }
+}
+
+@media (min-width:386px) and (max-width:1300px) {
+    .panel-heading {
+        width: 90%;
+    }
+}
+
+@media (max-width:1300px) {
+    .table {
+        overflow-x: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

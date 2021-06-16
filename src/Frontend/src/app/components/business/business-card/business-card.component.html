@@ -1,0 +1,9 @@
+<mat-card class="mat-elevastion-z2 card"  [class.mat-elevation-z20]="business == businessHovered"
+[class.border]="business.id == selectedId" (mouseover)="MouseOver(business)" (mouseout)="MouseOver(null)">
+    <img class="img-business" mat-card-image src="{{business.url_img}}" alt="business {{business.name}} image">
+    <mat-card-content>
+        <p><b>DIRECCIÓN:</b> {{business.address}}</p>
+        <p><b>CIF:</b> {{business.cif}}</p>
+        <p><b>TELÉFONO:</b> {{business.phone_number}}</p>
+    </mat-card-content>
+</mat-card>

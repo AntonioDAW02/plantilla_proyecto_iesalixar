@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="div-menu" fxLayout="row" fxLayoutAlign="end center">
+        <button mat-button [routerLink]="['/list-product']">INICIO</button>
+        <button mat-button [routerLink]="['/list-business']">EMPRESAS</button>
+        <button mat-button [routerLink]="['/product']">PRODUCTOS</button>
+        <button mat-button [routerLink]="['/profile']">PERFIL</button>
+    </div>
+    <h1 class="h1">GRUPO VELATIA</h1>
+    <section class="card-list" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="15px">
+        <article class="businesscard" *ngFor="let business of businessList" fxFlex="0 0 calc(25%-120px)"
+            fxFlex.lt-lg="0 0 calc(50%-20px)">
+            <app-business-card [business]="business"> </app-business-card>
+        </article>
+    </section>
+</div>

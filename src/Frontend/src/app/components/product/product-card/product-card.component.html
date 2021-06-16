@@ -1,0 +1,12 @@
+<mat-card class="mat-elevation-z2" [class.mat-elevation-z20]="product == productHovered"
+    [class.border]="product.id == selectedId" (mouseover)="MouseOver(product)" (mouseout)="MouseOver(null)">
+    <mat-card-header>
+        <mat-card-title>{{product.name | uppercase}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{product.urlImg}}" alt="product {{product.name}} image">
+    <span >{{product.price}} €</span>
+    <mat-card-actions>
+        <button routerLink="{{ product.id }}" mat-raised-button color="primary">DETALLES</button>
+        <button mat-button color="accent">COMPRAR</button>
+    </mat-card-actions>
+</mat-card>

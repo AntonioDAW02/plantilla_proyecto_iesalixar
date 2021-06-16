@@ -1,0 +1,63 @@
+<div class="container-product">
+  <div class="div-menu" fxLayout="row" fxLayoutAlign="end center">
+    <button mat-button [routerLink]="['/list-product']">INICIO</button>
+    <button mat-button [routerLink]="['/list-business']">EMPRESAS</button>
+    <button mat-button [routerLink]="['/product']">PRODUCTOS</button>
+    <button mat-button [routerLink]="['/profile']">PERFIL</button>
+  </div>
+  <div class="panel-heading">
+    <h2 class="panel-title headingText">Productos disponibles</h2>
+  </div>
+  <div class="table">
+    <table mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Id</th>
+        <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Nombre</th>
+        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="homologation">
+        <th mat-header-cell *matHeaderCellDef>Homologación</th>
+        <td mat-cell *matCellDef="let element">{{ element.homologation }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef>Descripción</th>
+        <td mat-cell *matCellDef="let element">{{ element.description }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef>Precio</th>
+        <td mat-cell *matCellDef="let element">{{ element.price }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="category">
+        <th mat-header-cell *matHeaderCellDef>Categoría</th>
+        <td mat-cell *matCellDef="let element">{{ getCategoryName(element.category.id) }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="options">
+        <th mat-header-cell *matHeaderCellDef>Opciones</th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-raised-button class="btn-ed" type="button" color="primary" (click)="updateProduct(element)">
+            Editar
+          </button>
+          <button mat-raised-button class="btn-el" type="button" color="warn" (click)="deleteProduct(element)">
+            Eliminar
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+  <mat-paginator class="paginator" [pageSizeOptions]="[5, dataLengthHalf, dataLength]" showFirstLastButtons></mat-paginator>
+  <div class="btn-dialog" fxLayoutAlign="end">
+    <button mat-fab color="primary" (click)="openDialog()">+</button>
+  </div>
+</div>

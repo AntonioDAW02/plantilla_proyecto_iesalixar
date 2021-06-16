@@ -1,0 +1,6 @@
+<mat-toolbar class="toolbar">
+  <img class="logo" src="../../../assets/logo3.png" alt="main-logo" />
+  <div *ngIf="showButtonLogout">
+    <button  mat-raised-button class="logout" mat-button color="warn" (click)="logout()">Cerrar Sesión</button>
+  </div>
+</mat-toolbar>

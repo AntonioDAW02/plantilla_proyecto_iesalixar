@@ -1,0 +1,52 @@
+<div class="register-container">
+    <div class="register-content">
+        <img class="logo" src="../../../assets/logo3.png" alt="main-logo">
+        <mat-card>
+            <form [formGroup]="registerForm">
+                <cdk-virtual-scroll-viewport itemSize="50" class="scroll">
+                    <mat-form-field>
+                        <input type="text" class="input" matInput placeholder="Name" formControlName="name">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input type="text" class="input" matInput placeholder="Surname" formControlName="surname">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input type="text" class="input" matInput placeholder="Dni" formControlName="dni">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input type="text" class="input" matInput placeholder="Username" formControlName="username">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input type="password" class="input" matInput placeholder="Password" formControlName="password">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input type="number" class="input" matInput placeholder="Phone Number"
+                            formControlName="phone_number">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input type="text" class="input" matInput placeholder="Email" formControlName="email">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input type="text" class="input" matInput placeholder="City" formControlName="city">
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Rol de usuario</mat-label>
+                        <select matNativeControl name="rol" formControlName="rol">
+                            <option value="" selected></option>
+                            <option *ngFor="let item of rol" [ngValue]="item">{{item.name}}</option>
+                        </select>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Empresa:</mat-label>
+                        <select matNativeControl name="business" formControlName="business">
+                            <option class="option" value="" selected></option>
+                            <option class="option" *ngFor="let item of business" [ngValue]="item">{{item.name}}</option>
+                        </select>
+                    </mat-form-field>
+                </cdk-virtual-scroll-viewport>
+                <button type="submit" mat-raised-button color="primary" (click)="register()">Registrarse</button>
+            </form>
+        </mat-card>
+
+    </div>
+</div>

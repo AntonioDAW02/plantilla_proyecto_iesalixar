@@ -1,0 +1,12 @@
+<div class="div-menu" fxLayout="row" fxLayoutAlign="end center">
+    <button mat-button [routerLink]="['/list-product']">INICIO</button>
+    <button mat-button [routerLink]="['/list-business']">EMPRESAS</button>
+    <button mat-button [routerLink]="['/product']">PRODUCTOS</button>
+    <button mat-button [routerLink]="['/profile']">PERFIL</button>
+</div>
+<section class="card-list" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="20px">
+    <article class="productcard" *ngFor="let product of productList" fxFlex="0 0 calc(25%-125px)"
+        fxFlex.lt-lg="0 0 calc(50%-20px)">
+        <app-product-card [product]="product"> </app-product-card>
+    </article>
+</section>

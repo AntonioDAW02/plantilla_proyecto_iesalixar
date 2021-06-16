@@ -1,0 +1,30 @@
+.profileDataForm {
+    width: 80%;
+    margin: 5rem auto;
+    padding: 1.5rem 0;
+}
+
+.profileDataForm form, .imgProfile, .personalData {
+    width: 100%;
+}
+
+.personalData h2 {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.full-width{
+    margin: 1rem 0;
+    min-width: 250px;
+}
+
+.div-menu {
+    background-color: #6200EE;
+    color: white;
+}
+
+@media (min-width: 1280px){
+    .full-width{
+        min-width: 25rem;
+    }
+}

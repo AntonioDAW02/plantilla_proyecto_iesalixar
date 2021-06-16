@@ -1,0 +1,21 @@
+<div class="login-container">
+    <div class="login-content">
+        <img class="logo" src="../../../assets/logo3.png" alt="main-logo">
+        <mat-card>
+            <form [formGroup]="loginForm">
+                <mat-form-field>
+                    <input type="text" class="input" matInput placeholder="Username" formControlName="username">
+                </mat-form-field>
+                <mat-form-field>
+                    <input type="password" class="input" matInput placeholder="Password" formControlName="password">
+                </mat-form-field>
+                <div fxLayoutAlign="center" fxLayoutGap="5px">
+                    <input type="checkbox" formControlName="session">
+                    <label>¿Recuérdame?</label>
+                    <a id="linkregister" href="/register">Regístrese aquí</a>
+                </div>
+                <button type="submit" mat-raised-button color="primary" [disabled]="!loginForm.valid" (click)="login()">Iniciar Sesión</button>
+            </form>
+        </mat-card>
+    </div>
+</div>

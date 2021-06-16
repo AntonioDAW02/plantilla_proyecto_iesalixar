@@ -1,0 +1,44 @@
+<form class="form" [formGroup]="registerProduct" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <div class="full-width" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <h2>Datos del Producto</h2>
+        <mat-form-field-control class="full-width" fxLayout="column">
+            <mat-form-field class="full-width">
+                <mat-label>Nombre</mat-label>
+                <input type="text" class="input-form form-control" name="name" formControlName="name" matInput placeholder="Nombre">
+            </mat-form-field>
+        </mat-form-field-control>
+        <mat-form-field-control class="full-width" fxLayout="column">
+            <mat-form-field class="full-width">
+                <mat-label>Homologación</mat-label>
+                <input type="text" class="input-form form-control" name="homologation" formControlName="homologation" matInput placeholder="Homologación">
+            </mat-form-field>
+        </mat-form-field-control>
+        <mat-form-field-control class="full-width" fxLayout="column">
+            <mat-form-field class="full-width">
+                <mat-label>Descripción</mat-label>
+                <input type="text" class="input-form form-control" name="description" formControlName="description" matInput placeholder="Descripción">
+            </mat-form-field>
+        </mat-form-field-control>
+        <mat-form-field-control class="full-width" fxLayout="column">
+            <mat-form-field class="full-width">
+                <mat-label>Precio</mat-label>
+                <input type="number" class="input-form form-control" name="price" formControlName="price" matInput placeholder="Precio">
+            </mat-form-field>
+        </mat-form-field-control>
+        <mat-form-field-control class="full-width" fxLayout="column">
+            <mat-form-field class="input-file">
+                <label class="custom-file">
+                    <input type="text" class="input-form form-control" name="urlImg" formControlName="urlImg" matInput placeholder="Url Imagen">
+                </label>
+            </mat-form-field>
+        </mat-form-field-control>
+        <mat-form-field appearance="fill">
+            <mat-label>Categoria:</mat-label>
+            <select matNativeControl name="category" id="category" formControlName="category">
+                <option class="option" value="" selected>Seleccionar</option>
+                <option class="option" *ngFor="let item of categories" [ngValue]="item">{{item.name}}</option>
+            </select>
+        </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" (click)="saveProduct()">Guardar</button>
+</form>

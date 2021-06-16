@@ -1,0 +1,81 @@
+.container-business-list{
+    height: calc(100vh - 41.5%);
+}
+
+.panel-heading {
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.panel-heading,
+.headingText {
+    padding-top: 10px;
+    max-width: 1350px;
+}
+
+.btn-panel {
+    margin-top: 0.45rem;
+    float: right;
+}
+
+table {
+    min-width: 1300px;
+    margin: 0 auto;
+}
+
+table tr th,
+table tr td {
+    text-align: center;
+    padding: 1rem;
+}
+.mat-paginator-container{
+    padding: 0;
+}
+
+.mat-paginator {
+    display: flex;
+    justify-content: right;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+@media (max-width:385px) {
+
+    .panel-heading {
+        width: 90%;
+        margin-left: 1.5rem;
+    }
+
+    .panel-heading,
+    .headingText {
+        display: inline-block;
+    }
+
+    .btn-panel {
+        float: left;
+    }
+}
+
+@media (min-width:386px) and (max-width:1300px) {
+    .panel-heading {
+        width: 90%;
+    }
+
+    .btn-panel {
+        float: right;
+        margin-right: 0.5rem;
+    }
+
+    .mat-paginator {
+        width: 90%;
+    }
+}
+
+@media (max-width:1300px) {
+
+    .table {
+        overflow-x: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
