@@ -38,14 +38,17 @@ table tr td {
 }
 
 .mat-paginator, .btn-dialog {
-    display: flex;
-    justify-content: right;
     width: 90%;
     max-width: 1350px;
     margin: 0 auto;
 }
 
 @media (max-width:385px) {
+    .container-product {
+        height: calc(100vh - 12%);
+        margin-bottom: 1rem;
+    }
+
     .panel-heading {
         width: 90%;
         margin-left: 1.5rem;

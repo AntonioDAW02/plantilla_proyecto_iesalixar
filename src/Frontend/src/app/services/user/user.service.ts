@@ -23,7 +23,8 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  private API_SERVER = "https://buy-medium-voltage-backend.herokuapp.com/user/";
+  //private API_SERVER = "https://buy-medium-voltage-backend.herokuapp.com/user/";
+  private API_SERVER = "localhost:4200/user/";
 
   login(user: any): Observable<any> {
     return this.http.post(this.API_SERVER + "login",user);

@@ -20,7 +20,7 @@ export class OrderService {
 
   constructor(private http: HttpClient) { }
 
-  private API_SERVER = "https://buy-medium-voltage-backend.herokuapp.com/order/";
+  private API_SERVER = "localhost:4200/order/";
 
   getAllOrders(): Observable<any>{
     return this.http.get(this.API_SERVER + "orders");

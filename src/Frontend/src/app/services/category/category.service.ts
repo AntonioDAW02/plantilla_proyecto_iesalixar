@@ -15,7 +15,7 @@ export class CategoryService {
 
   constructor(private http: HttpClient) { }
 
-  private API_SERVER = "https://buy-medium-voltage-backend.herokuapp.com/category/";
+  private API_SERVER = "localhost:4200/category/";
 
   getAllCategories(): Observable<any>{
     return this.http.get(this.API_SERVER + "categories");

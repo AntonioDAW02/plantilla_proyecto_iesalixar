@@ -1,10 +1,9 @@
 .container-business-list{
-    height: calc(100vh - 41.5%);
+    min-height: calc(100vh - 25% - 60px);
 }
 
 .panel-heading {
-    width: 100%;
-    margin: 3rem auto;
+    margin: 0 auto;
 }
 
 .panel-heading,

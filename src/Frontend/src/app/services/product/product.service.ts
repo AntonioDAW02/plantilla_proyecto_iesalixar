@@ -20,7 +20,7 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  private API_SERVER = "https://buy-medium-voltage-backend.herokuapp.com/product/";
+  private API_SERVER = "localhost:4200/product/";
 
   register(product: any): Observable<any> {
     return this.http.post(this.API_SERVER + "new", product);

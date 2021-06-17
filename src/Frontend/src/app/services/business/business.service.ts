@@ -19,7 +19,7 @@ export class BusinessService {
 
   constructor(private http: HttpClient) { }
 
-  private API_SERVER = "https://buy-medium-voltage-backend.herokuapp.com/business/";
+  private API_SERVER = "localhost:4200/business/";
 
   getAllBusiness(): Observable<any> {
     return this.http.get(this.API_SERVER + "all");

@@ -24,6 +24,7 @@ import { BusinessDataTableComponent } from './components/management-admin/busine
 import { BusinessListComponent } from './components/business/business-list/business-list.component';
 import { BusinessCardComponent } from './components/business/business-card/business-card.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -56,7 +57,9 @@ import { FooterComponent } from './components/footer/footer.component';
     FlexLayoutModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

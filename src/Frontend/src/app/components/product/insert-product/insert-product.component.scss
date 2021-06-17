@@ -13,3 +13,9 @@
     margin-top: 15px;
     outline: none;
 }
+
+@media (max-width: 569px){
+    .form {
+        width: auto;
+    }
+}
